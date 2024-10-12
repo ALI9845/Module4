@@ -13,5 +13,8 @@ do {
         alert('One or both entries are invalid.');
     }
     again = prompt('Run application again? (y or n)', 'y');
+    if (repeatEntry !== 'y' && repeatEntry !== 'n') {
+        alert("Invalid entry! Please enter 'y' for yes or 'n' for no.");
+    }
 } while (again === 'y');
 console.log('Application has exited.');
